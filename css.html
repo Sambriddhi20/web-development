@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+       body{
+        background-color: yellow;
+        text-align: center;
+        height: 160vh;
+        width: 100%;
+       }
+       div.main {
+        background-color: #56621f;
+        margin: 20px 40px 60px 80px;
+        border-top: 10px solid red;
+        border-bottom: 20px dotted green;
+        padding: 30px 60px;
+        background-image: url("")    
+        background-repeat: no-repeat;
+    background-size: cover;
+       }
+       p#test {
+        color: brown;
+       }
+       a:link {
+        color: rgb(220, 80, 15);
+       }
+       a:visited {
+        color: rgb(194, 15, 191);
+       }
+         a:hover {
+          color: rgb(15, 191, 15);
+         }
+         #division1 {
+            position:absolute;
+            width: 100px;
+            height: 100px;
+            background: red;
+            left: 100px;
+            z-index: 5;
+            float: left;
+         }
+            #division2 {
+                position:fixed;
+                width: 50px;
+                height: 50px;
+                background: rgb(19, 193, 66);
+                left: 95px;
+                z-index: 5;
+                float: left;
+            } 
+            #division3{
+                position: fixed;
+                width: 80px;
+                height: 80px;
+                background: rgb(123, 4, 117);
+                left: 120px;
+                z-index: 5;
+                float: left;
+            }  
+            #division4{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                background: gold;
+                left: 145px;
+                z-index: 5;
+                float: left;
+            }
+            #parent {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 8px;
+            }
+    </style>
+</head>
+<body>
+    
+    <div class="main bca" style="background-color: #2f1f62;    margin: 20px 40px 60px 80px;border-top: 10px solid red;
+    border-bottom: 20px dotted green; padding: 30px 60px;">
+        <p id="test" style="color: brown; "> This in a paragraph</p>
+        <a href="https://www.youtube.com/"> This is youtube</a>
+    </div>
+    <div id="division1"></div>
+    <div id="division2"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="division3"></div>
+    <div id="division4"></div>
+    <br><br><br><br><br><br><br><br>
+    <div id="parent"></div>
+    <div class="flex-container"></div>
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+    <br><br><br>
+    <div class="grid-container">
+        <div class="grid-item header">Header</div>
+        <div class="grid-item sidebar">Sidebar</div>
+        <div class="grid-item next">next</div>
+        <div class="grid-item footer">Footer</div>
+    </div>
+
+</body>
+</html>
